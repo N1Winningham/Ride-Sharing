@@ -1,0 +1,154 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+}
+
+.yellowtail-regular {
+    font-family: "Yellowtail", cursive;
+    font-weight: 400;
+    font-style: normal;
+}
+
+
+.Subbutton{
+    cursor: pointer;
+}
+
+input, textarea, select{
+    width: 100%;
+    background-color: #ffff;
+    border: none;
+    outline: none;
+    padding: 10px;
+    margin-top: 5px;
+    resize: none;
+    color: black;
+    border-radius: 10px;
+}
+
+.Form_Column_Name{
+    color: white;
+}
+.Form_Column_Email{
+    color: white;
+}
+.Form_Column_Date{
+    color: white;
+}
+.Form_Column_Num{
+    color: white;
+}
+.Form_Column_Mes{
+    color: white;
+}
+.Form_Footer{
+    color: gold;
+}
+.Form_Column_Phone{
+    color: white;
+}
+.Form_Column_Time{
+    color: white;
+}
+.Form_Column_Insta{
+    color: white;
+}
+
+.Form_Body_Box{
+    padding: 20px;
+}
+
+.Form_Row{
+    justify-content: space-between;
+    padding: 5px 0;
+}
+
+.Form_Column_Mes{ 
+    width: 100%;
+}
+
+.Form_Column_Sub{
+    width: 30%;
+}
+
+.Form_Column_Name{
+    width: 50%;
+}
+
+.Booking_Title {
+    font-size: 40px;
+    color: gold;
+}
+
+.Booking_Subtitle{
+    color: gold;
+}
+
+.Form_Head{
+    text-align: center;
+}
+
+.Form_Head h1{
+    font-family: "Yellowtail";
+    font-size: 300%;
+}
+
+.Form_Head p{
+    font-family: "Yellowtail";
+    font-size: 150%;
+}
+
+.Form_Head, .Form_Footer{
+    background-color: black;
+    padding: 20px 10px;
+}
+
+.Booking_Container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    min-height: 100vh;
+    overflow-y: auto;
+    padding: 20px 16px;
+    background-color: black;
+}
+
+.Form_Body{
+    width: 500px;
+    background-color: black;
+}
+
+@media screen and (max-width:600px){
+    .Form_Row{
+        flex: column;
+        padding: 0;
+    }
+
+    .Form_Column_Mes{
+        width: 100%;
+        padding: 10px 0;
+    }
+    
+    .Form_Column_Sub{
+        width: 50%;
+        padding: 10px 0;
+    }
+    
+    .Form_Column_Name{
+        width: 100%;
+        padding: 10px 0;
+    }
+
+    .Booking_Container{
+        padding: 50px 16px;
+    }
+}
+
+
+@media (max-width: 900px) {
+    .Booking_Container{
+        width: 96.7%;
+    }
+}
