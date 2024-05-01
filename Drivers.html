@@ -1,7 +1,7 @@
 <html>
 <head>
     <title>Wooster Ride Sharing</title>
-    <link rel="stylesheet" href="Car.css">
+    <link rel="stylesheet" href="Drivers.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Aboreto&family=Courgette&family=Kaushan+Script&family=Lobster&family=Lobster+Two:ital,wght@0,400;0,700;1,400;1,700&family=Pacifico&family=Yellowtail&display=swap" rel="stylesheet">
@@ -24,8 +24,8 @@
         <div class="Booking_Body">
 
             <div class="Form_Head">
-                <h1 class="Booking_Title">Ride Booking</h1>
-                <p class="Booking_Subtitle">Start Booking Today!</p>
+                <h1 class="Booking_Title">Driver Sign Up</h1>
+                <p class="Booking_Subtitle">Sign up to become a driver today!</p>
             </div>
 
             <form class="Form_Body_Box" action="https://formsubmit.co/eshanrmfaiza@gmail.com" method="POST">
@@ -50,29 +50,27 @@
 
 
                 <div class="Form_Row">
-                    <div class="Form_Column_Date">
-                        <p>Select Date</p>
-                        <input type="date" name="date" id="date" required>
-                    </div>
-                    <div class="Form_Column_Time">
-                        <p>Select Time</p>
-                        <input type="time" name="time" id="time" placeholder="Time" required >
+                    <div class="Form_Column_Model">
+                        <p>Car Model</p>
+                        <input type="text" name="Model" id="Model" placeholder="Car Model" required>
                     </div>
                     <div class="Form_Column_Num">
-                        <p>Estimated Passenger Group Size</p>
+                        <p>Car Capacity</p>
                         <select type="select">
-                            <option>Select Service</option>
+                            <option>Select Capacity</option>
                             <option value="1">1</option>
                             <option value="2">2</option>
                             <option value="3">3</option>
                             <option value="1">4</option>
+                            <option value="3">5</option>
+                            <option value="1">6</option>
                         </select>
                 </div>
 
 
                 <div class="Form_Row">
                     <div class="Form_Column_Mes">
-                        <p>Messages</p>
+                        <p>Additional Information</p>
                         <textarea name="Messages" id="Messages" cols="10" rows="2"></textarea>
                     </div>
                 </div>

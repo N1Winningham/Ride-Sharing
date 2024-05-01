@@ -21,7 +21,7 @@
 }
 
 body{
-    background-image: linear-gradient(rgba(0,0,0,0.75),rgba(0,0,0,0.75)),url(Car\ Booking.png);
+    background-image: linear-gradient(rgba(0,0,0,0.75),rgba(0,0,0,0.75)),url(Car\ Drivers.png);
     background-size: cover;
     background-position: center;
 }
@@ -55,11 +55,11 @@ input, textarea, select{
     font-family: "Aboreto";
 }
 
-.Form_Column_Date{
+.Form_Column_Model{
     color: rgb(231, 203, 46);
     padding-bottom: 30px;
 }
-.Form_Column_Date p{
+.Form_Column_Model p{
     font-family: "Aboreto";
 }
 
@@ -87,14 +87,6 @@ input, textarea, select{
     padding-bottom: 30px;
 }
 .Form_Column_Phone p{
-    font-family: "Aboreto";
-}
-
-.Form_Column_Time{
-    color: rgb(231, 203, 46);
-    padding-bottom: 30px;
-}
-.Form_Column_Time p{
     font-family: "Aboreto";
 }
 
@@ -220,9 +212,6 @@ input, textarea, select{
     width: 500px;
 }
 
-input[type="time"]::-webkit-calendar-picker-indicator{
-    filter: invert(48%) sepia(13%) saturate(327%) hue-rotate(120deg) brightness(95%) contrast(80%);
-}
 
 @media screen and (max-width:600px){
     .Form_Row{
