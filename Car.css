@@ -224,6 +224,10 @@ input[type="time"]::-webkit-calendar-picker-indicator{
     filter: invert(48%) sepia(13%) saturate(327%) hue-rotate(120deg) brightness(95%) contrast(80%);
 }
 
+input[type="date"]::-webkit-calendar-picker-indicator{
+    filter: invert(48%) sepia(13%) saturate(327%) hue-rotate(120deg) brightness(95%) contrast(80%);
+}
+
 @media screen and (max-width:600px){
     .Form_Row{
         flex: column;
