@@ -210,8 +210,6 @@ input, textarea, select{
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 100%;
-    min-height: 100vh;
     overflow-y: auto;
     padding: 20px 16px;
 }
