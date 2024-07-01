@@ -1,0 +1,57 @@
+<html>
+<head>
+    <title>Wooster Ride Sharing</title>
+    <link rel="stylesheet" href="Cost.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Aboreto&family=Courgette&family=Kaushan+Script&family=Lobster&family=Lobster+Two:ital,wght@0,400;0,700;1,400;1,700&family=Pacifico&family=Yellowtail&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="navbar">
+        <a href="CarHome.html"><img src="Car Logo No Background.png" class="logo"></a>
+        <ul>
+            <li><a href="CarHome.html">Home</a></li>
+            <li><a href="Car.html">Booking</a></li>
+            <li><a href="Drivers.html">Drivers</a></li>
+            <li><a href="Mission.html">Misson</a></li>
+            <li><a href="About%20Us.html">About Us</a></li>
+        </ul>
+    </div>
+
+    <div class="Booking_Container">
+
+        <div class="Booking_Body">
+
+            <div class="Form_Head">
+                <h1 class="Booking_Title">Cost Calculator</h1>
+                <p class="Booking_Subtitle">Get an estimate of how much your ride will cost!</p>
+            </div>
+
+            <div>
+
+    <label for="input">Mileage:</label>
+    <input type="number" id="input">
+    <input class="SubButton" type="Submit" onclick="multiply()">
+    <br>
+    <label for="output">Estimated Cost:</label>
+    <input type="number" id="output" readonly>
+
+    <script>
+        function multiply() {
+            let Mileage = parseFloat(document.getElementById('input').value);
+            let Cost = Mileage * 1.15;
+            let roundedResult = Math.ceil(Cost * 100) / 100;
+            document.getElementById('output').value = roundedResult.toFixed(2);
+        }
+    </script>
+            </div>
+
+
+            <div class="Form_Footer">
+<!--<p>Designed By Nathan Winningham</a></p>-->
+            </div>
+        </div>
+
+    </div>
+</body>
+</html>
