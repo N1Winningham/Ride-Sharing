@@ -29,21 +29,26 @@
 
             <div>
 
-    <label for="input">Miles:</label>
-    <input type="number" id="input">
-    <input class="SubButton" type="Submit" onclick="multiply()">
-    <br>
-    <label for="output">Estimated Cost:</label>
-    <input type="number" id="output" readonly>
+                <label for="input">Mileage:</label>
+                <input type="number" id="input">
+                <input class="SubButton" type="submit" onclick="multiply()">
+                <br>
+                <label for="output">Estimated Cost:</label>
+                <input type="text" id="output" readonly>
 
-    <script>
-        function multiply() {
-            let Mileage = parseFloat(document.getElementById('input').value);
-            let Cost = Mileage * 1.15;
-            let roundedResult = Math.ceil(Cost * 100) / 100;
-            document.getElementById('output').value = roundedResult.toFixed(2);
-        }
-    </script>
+                <script>
+                    function multiply() {
+                        let input = document.getElementById('input').value.trim();
+                        if (input === '' || isNaN(input)) {
+                            document.getElementById('output').value = '$0';
+                        } else {
+                            let Mileage = parseFloat(input);
+                            let Cost = Mileage * 1.15;
+                            let roundedResult = Math.ceil(Cost * 100) / 100;
+                            document.getElementById('output').value = '$' + roundedResult.toFixed(2);
+                        }
+                    }
+                </script>
             </div>
 
 
