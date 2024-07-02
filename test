@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Wooster Ride Sharing</title>
+    <link rel="stylesheet" href="Car.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Aboreto&family=Courgette&family=Kaushan+Script&family=Lobster&family=Lobster+Two:ital,wght@0,400;0,700;1,400;1,700&family=Pacifico&family=Yellowtail&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="navbar">
+        <a href="CarHome.html"><img src="Car Logo No Background.png" class="logo"></a>
+        <ul>
+            <li><a href="CarHome.html">Home</a></li>
+            <li><a href="Car.html">Booking</a></li>
+            <li><a href="Drivers.html">Drivers</a></li>
+            <li><a href="Mission.html">Misson</a></li>
+            <li><a href="Cost.html">Cost Calculator</a></li>
+            <li><a href="About%20Us.html">About Us</a></li>
+        </ul>
+    </div>
+
+    <div class="Booking_Container">
+        <div class="Booking_Body">
+            <div class="Form_Head">
+                <h1 class="Booking_Title">Ride Booking</h1>
+                <p class="Booking_Subtitle">Start Booking Today!</p>
+            </div>
+
+            <form class="Form_Body_Box" action="https://formsubmit.co/eshanrmfaiza@gmail.com" method="POST">
+                <div class="Form_Row">
+                    <div class="Form_Column_Name">
+                        <p>Your Name</p>
+                        <input type="text" name="name" id="name" placeholder="Your Name" required>
+                    </div>
+                    <div class="Form_Column_Insta">
+                        <p>Instagram</p>
+                        <input type="text" name="instagram" id="instagram" placeholder="Instagram Handle" required>
+                    </div>
+                    <div class="Form_Column_Insta">
+                        <p>Pickup Location</p>
+                        <input type="text" name="pickup" id="pickup" placeholder="Pickup Location" required>
+                    </div>
+                    <div class="Form_Column_Insta">
+                        <p>Drop Off Location</p>
+                        <input type="text" name="dropoff" id="dropoff" placeholder="Drop Off Location" required>
+                    </div>
+                    <div class="Form_Column_Phone">
+                        <p>Phone Number</p>
+                        <input type="text" name="phone" id="phone" placeholder="Phone Number" required>
+                    </div>
+                    <div class="Form_Column_Email">
+                        <p>Email Address</p>
+                        <input type="hidden" name="_autoresponse" value="Thank you for booking through Wooster Ride Share.  Let us know how we did!
+                        
+                        https://woorideshare.site/review">
+                        <input type="email" name="email" id="email" placeholder="Email Address" required>
+                    </div>
+                </div>
+
+                <div class="Form_Row">
+                    <div class="Form_Column_Date">
+                        <p>Select Date</p>
+                        <input type="date" name="date" id="date" required>
+                    </div>
+                    <div class="Form_Column_Time">
+                        <p>Select Time</p>
+                        <input type="time" name="time" id="time" placeholder="Time" required >
+                    </div>
+                    <div class="Form_Column_Num">
+                        <p>Estimated Passenger Group Size</p>
+                        <select type="select" id="passengerSize">
+                            <option>Select Service</option>
+                            <option value="1">1</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                            <option value="4">4</option>
+                        </select>
+                    </div>
+                    <div class="Form_Column_Num">
+                        <p>Date and Time</p>
+                        <select type="select" id="dateTime">
+                            <option>Select Date</option>
+                            <option value="5">5</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                            <option value="4">4</option>
+                        </select>
+                    </div>
+                </div>
+
+                <div class="Form_Row">
+                    <div class="Form_Column_Mes">
+                        <p>Messages</p>
+                        <textarea name="Messages" id="Messages" cols="10" rows="2"></textarea>
+                    </div>
+                </div>
+
+                <div class="Form_Row">
+                    <div class="Form_Column_Sub">
+                        <input class="SubButton" type="Submit" value="Submit">
+                    </div>
+                </div>
+
+                <input type="hidden" name="_next" value="https://woorideshare.site/review">
+            </form>
+
+            <div class="Form_Footer">
+                <p>Designed By Nathan Winningham</a></p>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        document.getElementById('passengerSize').addEventListener('change', function() {
+            let selectedOption = this.options[this.selectedIndex];
+            if (selectedOption.value !== 'Select Service') {
+                selectedOption.remove();
+            }
+        });
+
+        document.getElementById('dateTime').addEventListener('change', function() {
+            let selectedOption = this.options[this.selectedIndex];
+            if (selectedOption.value !== 'Select Date') {
+                selectedOption.remove();
+            }
+        });
+    </script>
+</body>
+</html>
