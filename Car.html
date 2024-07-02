@@ -80,6 +80,16 @@
                         </select>
                 </div>
 
+                <div class="Form_Column_Num">
+                    <p>Date and Time</p>
+                    <select type="select">
+                        <option>Select Date</option>
+                        <option value="1">5</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="1">4</option>
+                    </select>
+                </div>
 
                 <div class="Form_Row">
                     <div class="Form_Column_Mes">
@@ -106,5 +116,15 @@
         </div>
 
     </div>
+
+
+    <script>
+        document.getElementById('dateTime').addEventListener('change', function() {
+            let selectedOption = this.options[this.selectedIndex];
+            if (selectedOption.value !== 'Select Date') {
+                selectedOption.remove();
+            }
+        });
+    </script>
 </body>
 </html>
