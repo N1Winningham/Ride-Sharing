@@ -60,7 +60,7 @@
 }
 
 .logo{
-    width: 150px;
+    width: 45%;
     cursor: pointer;
 }
 
@@ -148,6 +148,10 @@ span{
     bottom: 0;
     z-index: -1;
     transition: 0.5s;
+}
+
+.button{
+    width: 1000%;
 }
 
 button:hover span{
