@@ -1,3 +1,4 @@
+<!DOCTYPE html>
 <html>
 <head>
     <title>Wooster Ride Sharing</title>
@@ -8,28 +9,25 @@
 </head>
 <body>
     <div class="navbar">
-        <a href="CarHome.html"><img src="Car Logo No Background.png" class="logo"></a>
+        <a href="CarHome.html"><img src="New Logo.png" class="logo"></a>
         <ul>
-                <li><a href="CarHome.html">Home</a></li>
-                <li><a href="Car.html">Booking</a></li>
-                <li><a href="Drivers.html">Drivers</a></li>
-                <li><a href="Mission.html">Misson</a></li>
-                <li><a href="Cost.html">MyRide AI</a></li>
-                <li><a href="About%20Us.html">About Us</a></li>
+            <li><a href="CarHome.html">Home</a></li>
+            <li><a href="Car.html">Booking</a></li>
+            <li><a href="Drivers.html">Drivers</a></li>
+            <li><a href="Mission.html">Misson</a></li>
+            <li><a href="Cost.html">Cost Calculator</a></li>
+            <li><a href="About%20Us.html">About Us</a></li>
         </ul>
     </div>
 
     <div class="Booking_Container">
-
         <div class="Booking_Body">
-
             <div class="Form_Head">
                 <h1 class="Booking_Title">Ride Booking</h1>
                 <p class="Booking_Subtitle">Start Booking Today!</p>
             </div>
 
             <form class="Form_Body_Box" action="https://formsubmit.co/eshanrmfaiza@gmail.com" method="POST">
-
                 <div class="Form_Row">
                     <div class="Form_Column_Name">
                         <p>Your Name</p>
@@ -57,8 +55,8 @@
                         
                         https://woorideshare.site/review">
                         <input type="email" name="email" id="email" placeholder="Email Address" required>
+                    </div>
                 </div>
-
 
                 <div class="Form_Row">
                     <div class="Form_Column_Date">
@@ -71,13 +69,25 @@
                     </div>
                     <div class="Form_Column_Num">
                         <p>Estimated Passenger Group Size</p>
-                        <select type="select">
+                        <select type="select" id="passengerSize">
                             <option>Select Service</option>
                             <option value="1">1</option>
                             <option value="2">2</option>
                             <option value="3">3</option>
-                            <option value="1">4</option>
+                            <option value="4">4</option>
                         </select>
+                    </div>
+                    <div class="Form_Column_Num">
+                        <p>Date and Time</p>
+                        <select type="select" id="dateTime">
+                            <option>Select Date</option>
+                            <option value="5">5</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                            <option value="4">4</option>
+                            <option value="4">N/A (type date in messages.)</option>
+                        </select>
+                    </div>
                 </div>
 
                 <div class="Form_Row">
@@ -87,7 +97,6 @@
                     </div>
                 </div>
 
-
                 <div class="Form_Row">
                     <div class="Form_Column_Sub">
                         <input class="SubButton" type="Submit" value="Submit">
@@ -95,19 +104,22 @@
                 </div>
 
                 <input type="hidden" name="_next" value="https://woorideshare.site/review">
-
             </form>
 
-
             <div class="Form_Footer">
-<!--<p>Designed By Nathan Winningham</a></p>-->
+                <p>Designed By Nathan Winningham</a></p>
             </div>
         </div>
-
     </div>
 
-
     <script>
+        document.getElementById('passengerSize').addEventListener('change', function() {
+            let selectedOption = this.options[this.selectedIndex];
+            if (selectedOption.value !== 'Select Service') {
+                selectedOption.remove();
+            }
+        });
+
         document.getElementById('dateTime').addEventListener('change', function() {
             let selectedOption = this.options[this.selectedIndex];
             if (selectedOption.value !== 'Select Date') {
